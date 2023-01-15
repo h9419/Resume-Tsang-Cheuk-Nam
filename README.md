@@ -1,4 +1,4 @@
 # Resume-Tsang-Cheuk-Nam
-Just my resume as of July 2022
+Just my resume, written in LaTeX, compiled using GitHub Actions
 
-See content in the [pdf](resume.pdf).
+See the [release page](https://github.com/h9419/Resume-Tsang-Cheuk-Nam/releases) for the most up to date PDF.
