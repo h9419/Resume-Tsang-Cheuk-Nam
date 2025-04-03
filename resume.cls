@@ -40,6 +40,10 @@
 %	HEADINGS COMMANDS: Commands for printing name and address
 %----------------------------------------------------------------------------------------
 
+% \address command can be used to set the first, second, and third address (last 2 optional)
+\def \lastupdated#1{\def\@lastupdated{#1}}
+\def \@lastupdated{}
+
 \def \name#1{\def\@name{#1}} % Defines the \name command to set name
 \def \@name {} % Sets \@name to empty by default
 
@@ -75,6 +79,8 @@
 % \printname is used to print the name as a page header
 \def \printname {
   \begingroup
+    \@lastupdated
+  
     \hfil{\MakeUppercase{\namesize\bf \@name}}\hfil
     \nameskip\break
   \endgroup
